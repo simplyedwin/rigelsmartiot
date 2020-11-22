@@ -1,0 +1,111 @@
+body {
+  background-color: #f9f8f7;
+  font-family: 'Fjalla One','Libre Baskerville', 'Cantarell',  serif, sans-serif;
+}
+
+[class*="nav-link"] {
+  color: #083864ff;
+  font: xx-large;
+}
+
+.carousel-item img {
+  margin: auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: #083864ff;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: #083864ff;
+}
+
+.contents{
+  font-family: 'Cantarell', sans-serif;
+  font-size:28px;
+  color: #083864ff;
+}
+
+.dropdown-item{
+  color: #083864ff;
+}
+
+.dropdown-menu {
+  background: #f8f9fA;
+}
+
+.formlabel{
+  font-family: 'Cantarell', sans-serif;
+  color: #083864ff;
+}
+
+li > a:hover{
+  background-color:  #0d7abfff;
+  border-radius: 10px;
+  color: white;
+}
+li > a:active{
+  background-color: #f9f8f7;
+  color: #083864ff;
+}
+
+.sectionpadding{
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 767.97px) {  
+  .contents {
+    font-size: 16px;
+  }
+  .indexheader{
+    font-size: 24px;
+  }
+  .carparksectionlogo img{
+    height: 30px;
+    width: 30px;
+  }
+  .carparksectionlogo h1{
+    font-size: 20px;
+
+  }
+
+  
+}
+
+@media screen and (min-width: 767.98px) {  
+  .contents {
+    font-size: 20px;
+  }
+  .indexheader{
+    font-size: 30px;
+  }
+  .carparksectionlogo h1{
+    font-size: 30px;
+
+  }
+}
+
+@media screen and (min-width: 991.98px) {  
+  .contents {
+    font-size: 28px;
+  }
+  .indexheader{
+    font-size: 40px;
+  }
+  .carparksectionlogo h1{
+    font-size: 40px;
+
+  }
+}
+

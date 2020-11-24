@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/sgcarparkbotCompleted.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>SGCarparkBot</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="navbar navbar-expand-lg sticky-top navbar-light shadow p-2 mb-5 bg-light rounded">
+      <a class="navbar-brand" href="index.html"><img src="images/brandlogo.svg" class="img-fluid" alt="brandlogo"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#intro">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="carparks.html">Carparks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactme.html"> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-8">
+
+        <p class="contents">
+
+          Hi there! Thanks for visting my website! If you would like to know more about me or
+          want to make more of my kind, please leave your info and query below and my developer will contact you
+          soon.
+        </p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-8">
+
+        <form>
+          <div class="form-group">
+            <label class="formlabel" for="visitorName">What's your name?</label>
+            <input type="text" class="form-control" id="visitorName">
+            <label class="formlabel" for="visitorEmail">What's your email address?</label>
+            <input type="email" class="form-control" id="visitorEmail">
+            <label class="formlabel" for="visitorSubject">What's it about?</label>
+            <select class="form-control" id="visitorSubject">
+              <option value="">&nbsp;</option>
+              <option>Make more of my kind</option>
+              <option>Collaboration</option>
+              <option>Job offer</option>
+              <option>Improve me</option>
+              <option>Need help</option>
+            </select>
+            <label class="formlabel" for="visitorQuery">What do you wanna ask me?</label>
+            <textarea class="form-control" id="visitorQuery" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

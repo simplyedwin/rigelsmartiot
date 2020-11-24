@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/sgcarparkbotCompleted.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>SGCarparkBot</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="navbar navbar-expand-lg sticky-top navbar-light shadow p-2 mb-5 bg-light rounded">
+      <a class="navbar-brand" href="index.html"><img src="images/brandlogo.svg" class="img-fluid" alt="brandlogo"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#intro">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="carparks.html">Carparks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactme.html"> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+    <div class="row justify-content-center">
+      <div class="col-8 contents">
+        <p> Here explains how I work. In Singapore <span><img src="images/singapore.svg" class="img-fluid"
+              alt="singaporeflag"></span> ,
+          the carparks are grouped as Housing Development Board (HDB) carpark and Land Transport Authority (LTA)
+          carpark. <br><br>The HDB carpark
+          refers to public residential carparks whereas LTA carpark refers to carparks in commerical buildings (e.g
+          shopping malls ,hotels).
+          Let's read further down to find out what I can tell you abou them.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center sectionpadding">
+      <div class="col carparksectionlogo">
+        <h1 style="color: #083864ff;"><img src="images/hdblogo60by60.svg"
+            class="img-fluid" alt="">HDB Carpark
+        </h1>
+        <hr/>
+      </div>
+      <div class="w-100" style="padding-top: 2rem;"></div>
+      <div class="col-md-12 col-lg-6">
+        <p class="contents">
+          When you provide an address for the HDB option, I'll search for the carparks that are near to the address.
+          <br><br>
+          If there're too many nearby,
+          I'll just show you the top 3 carparks with the highest available lots.
+          <br><br> I'll provide you the available lots and
+          free parking period (if any). Notice the
+          address is in blue ? It's clickable! Just click it!
+        </p>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <img src="images/aboutcarpark_botinfoHDBlotfee.JPG" class="img-fluid" alt="Carpark Info">
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center sectionpadding">
+      <div class="col-md-12 col-lg-6">
+        <img src="images/aboutcarpark_botinfoHDBhow.JPG" class="img-fluid" alt="Carpark Info">
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <p class="contents">
+          After clicking onto the address, I'll bring you to a google map where you'll see your destination in the map
+          (provided your gps is enable).
+          <br><br>
+          By clicking
+          direction and start on your google map, you can find your way to the carpark! Isn't it thoughful ?
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center sectionpadding">
+
+      <div class="col carparksectionlogo">
+        <h1 style="color: #083864ff; margin-top: 30px;"><img
+            src="images/ltalogo60by60.svg" class="ltacarpark img-fluid" alt="">LTA Carpark
+        </h1>
+        <hr />
+      </div>
+      <div class="w-100" style="padding-top: 2rem;"></div>
+
+
+      <div class="col-md-12 col-lg-6">
+
+        <p class="contents">
+          When you selected the LTA option, I will prompt you to select lots or fees. <br><br> You may ask why aren't
+          it's
+          like the HDB option since it's the same
+          type of info. The reason being so is that these 2 info are calling to 2 different dynamic api url. Of course,
+          in due time, my developer will
+          figure out how to merge them together. <br><br>Anyhow, let's see what will happen when you choose the fee.
+        </p>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <img src="images/carpark_botinfoLTAoption.JPG" class="img-fluid" alt="Carpark Info">
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center sectionpadding">
+      <div class="col-md-12 col-lg-6">
+        <img src="images/carpark_botinfoLTAfees.JPG" class="img-fluid" alt="Carpark Info">
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <p class="contents">
+          Same thing happens here but you'll provide the name of a landmark or shopping mall or hotel.
+          <br><br>I'll furnish you info about fee rates for during period and days or any free parking period.
+          Let's move on to the lots!
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center sectionpadding">
+      <div class="col-md-12 col-lg-6">
+        <p class="contents">
+          The lots info is similar to HDB option and you can click onto the name of the place to find your way there
+          using google map.
+        </p>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <img src="images/carpark_botinfoLTAlot.JPG" class="img-fluid" alt="Carpark Info">
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center sectionpadding">
+      <div class="col carparksectionlogo">
+        <h1 style="color: #083864ff; margin-top: 30px;"><img
+            src="images/warning.svg" class="ltacarpark img-fluid" alt="">Error Messages
+        </h1>
+        <hr />
+      </div>
+      <div class="w-100" style="padding-top: 2rem;"></div>
+      <div class="col-md-12 col-lg-6">
+        <div class="row justify-content-center align-items-center"></div>
+        <div class="col">
+          <img src="images/carpark_botinfoerrormsg1.JPG" class="img-fluid" alt="Carpark Info">
+        </div>
+        <div class="col">
+          <img src="images/carpark_botinfoerrormsg2.JPG" class="img-fluid" alt="Carpark Info">
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-6 ">
+        <p class="contents">
+          I don't break down easily if you provide the info as I asked. <br><br>But if it do happens (like typing
+          something when
+          asking you to press the
+          inline button or started typing with a weird character), you will see my error messages responds.
+        </p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-8 sectionpadding">
+        <p class="contents">
+          So that's all folks. Hope you have enjoy reading about how I works and
+          pls come and find me in telegram app @sgCarparkBot. See you <span class="material-icons" style="color: red;">
+            favorite
+          </span>!
+        </p>
+      </div>
+      <div class="text-center">
+        <img src="images/botdrivingrhcarpark.svg" class="img-fluid" alt="" style="padding-top: 4rem; width: 100%;">
+
+      </div>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+    <p style="font-size:10px;">
+  S'pore flag and Warning Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+    href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  </p>
+</body>
+
+</html>
